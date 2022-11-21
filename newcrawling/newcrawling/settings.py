@@ -1,4 +1,4 @@
-# Scrapy settings for sample project
+# Scrapy settings for newcrawling project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'sample'
+BOT_NAME = 'newcrawling'
 
-SPIDER_MODULES = ['sample.spiders']
-NEWSPIDER_MODULE = 'sample.spiders'
+SPIDER_MODULES = ['newcrawling.spiders']
+NEWSPIDER_MODULE = 'newcrawling.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'sample (+http://www.yourdomain.com)'
+#USER_AGENT = 'newcrawling (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'sample.middlewares.SampleSpiderMiddleware': 543,
+#    'newcrawling.middlewares.NewcrawlingSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'sample.middlewares.SampleDownloaderMiddleware': 543,
+#    'newcrawling.middlewares.NewcrawlingDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'sample.pipelines.SamplePipeline': 300,
+#    'newcrawling.pipelines.NewcrawlingPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

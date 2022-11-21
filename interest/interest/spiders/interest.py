@@ -9,7 +9,9 @@ class NewsUrlSpider(scrapy.Spider):
         headers= {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
         urls = 'https://finance.naver.com/research/debenture_list.naver?&page=1'
-
+        for i in range(1, 108):
+            yield scrapy.Request('https://finance.naver.com/research/debenture_list.naver?&page={0}'.format(i),
+                                    self.parse)
     
         for url in urls:
             yield scrapy.Request(url=url, headers=headers)

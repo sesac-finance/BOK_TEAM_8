@@ -6,7 +6,11 @@
 import scrapy
 
 
-class SampleItem(scrapy.Item):
+class NewcrawlingItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    title = scrapy.Field()
+    title_url = scrapy.Field()
+    date = scrapy.Field()
+
     pass

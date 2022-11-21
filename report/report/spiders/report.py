@@ -7,13 +7,13 @@ class ReportCrawlerSpider(scrapy.Spider):
     name = "report"
 
     def start_requests(self):
-        for i in range(1, 108):
-            yield scrapy.Request("https://finance.naver.com/research/debenture_list.naver?keyword=&brokerCode=&searchType=writeDate&writeFromDate=2011-01-01&writeToDate=2021-12-31&page={0}".format(i),
-                                    self.parse)
+        for i in range(1, 120):
+            yield scrapy.Request("https://finance.naver.com/research/debenture_list.naver?keyword=&brokerCode=&searchType=writeDate&writeFromDate=2011-01-01&writeToDate=2022-11-21&page={0}".format(i),
+                                    callback=self.parse)
 
 
 #    def parse(self, response):
-#        for i in range(2,46):
+#        for i in range(2,48):
 #            for sel in response.xpath('//*[@id="contentarea_left"]/div[3]/table[1]/tbody/tr[i]'):
 #                item = ReportItem()
 

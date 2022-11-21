@@ -1,0 +1,26 @@
+============ git hub branch =====
+
+
+new 폴더
+
+1. git bash -> git init 명령어
+
+2. github 주소 할당 받기
+
+3. git remote add origin 주소
+
+4. git add .
+
+5. git commit -m 'initial commit'
+
+6. git push origin master
+
+7. 폴더 삭제 -> 바탕화면 -> git clone 주소 -> github 폴더 가져옴
+
+8. cd 폴더 경로
+
+9. git checkout -b develop
+
+10. git checkout -b feat/crawler
+
+11. git merge feat/crawler
