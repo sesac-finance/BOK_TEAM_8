@@ -46,7 +46,6 @@ class NewcrawlingCrawlerSpider(scrapy.Spider):
                 item['title_url'] =  response.xpath('//*[@id="sp_nws{0}"]/div/div/a/@href'.format(i)).extract()
                 # item['press'] = response.xpath('//*[@id="sp_nws{0}"]/div/div/div[1]/div[2]/a/@href'.format(i)).extract()
                 item['date'] = response.xpath('//*[@id="sp_nws{0}"]/div/div/div[1]/div[2]/span/text()'.format(i)).extract()
-cd
 
                 # add_url = item['pdf_url'][0]
                 # with open('./pdf/{}.pdf'.format(item['title']), mode='wb') as f:

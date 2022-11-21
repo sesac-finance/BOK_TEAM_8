@@ -255,4 +255,4 @@ telegram_config
 *.ipynb
 
 # 폴더 무시
-__pycache_/
+*__pycache_/*
