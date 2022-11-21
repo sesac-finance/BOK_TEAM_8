@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,python,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,python,visualstudiocode
 
+*.txt
+*.pdf
+
 ### macOS ###
 # General
 .DS_Store
@@ -252,7 +255,8 @@ $RECYCLE.BIN/
 # config
 telegram_config
 *.csv
-*.ipynb
+# *.ipynb
+
 
 # 폴더 무시
 __pycache_/
